@@ -12,7 +12,7 @@ public class MovieRatingApplication {
 	public Object handleRequest(Request request, Context context){
 		
 		System.out.println(request.getUserId());
-		AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.standard().withRegion("us-east-2").build();
+		AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.standard().withRegion("your region").build();
 		DynamoDBMapper mapper = new DynamoDBMapper(client);
 		
 		Rating rating = null;

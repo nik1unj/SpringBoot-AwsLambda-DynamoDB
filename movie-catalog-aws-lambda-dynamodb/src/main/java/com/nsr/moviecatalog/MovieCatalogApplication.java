@@ -25,7 +25,7 @@ import com.nsr.moviecatalog.models.Request;
 public class MovieCatalogApplication {
 
 	//AWSLambda client = AWSLambdaClientBuilder.defaultClient();
-	AWSLambda client = AWSLambdaAsyncClient.builder().withRegion("us-east-2").build();
+	AWSLambda client = AWSLambdaAsyncClient.builder().withRegion("your region").build();
 	InvokeRequest invokeRequest = new InvokeRequest();
 
 	public Object handleRequest(Request request, Context context)

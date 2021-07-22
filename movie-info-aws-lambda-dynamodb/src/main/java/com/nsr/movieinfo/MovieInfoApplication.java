@@ -14,7 +14,7 @@ import com.nsr.movieinfo.model.Movie;
 public class MovieInfoApplication {
 
 	public Object handleRequest(Request request, Context context){
-		AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.standard().withRegion("us-east-2").build();
+		AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.standard().withRegion("your region").build();
 		DynamoDBMapper mapper = new DynamoDBMapper(client);
 		
 		Movie movie = null;

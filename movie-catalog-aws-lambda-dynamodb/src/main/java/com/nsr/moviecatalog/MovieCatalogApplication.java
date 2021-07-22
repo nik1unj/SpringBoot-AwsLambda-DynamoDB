@@ -41,7 +41,7 @@ public class MovieCatalogApplication {
 		payloadObject.put("httpMethod", "GET");
 		String payload = payloadObject.toString();
 
-		invokeRequest.withFunctionName("arn:aws:lambda:us-east-2:342123803606:function:user-ratings")
+		invokeRequest.withFunctionName("add your arn address")
 				.withPayload(payload);
 
 		InvokeResult invokeResult = client.invoke(invokeRequest);
@@ -73,7 +73,7 @@ public class MovieCatalogApplication {
 		String payload = payloadObject.toString();
 		
 		//InvokeRequest invokeRequest = new InvokeRequest();
-		invokeRequest.withFunctionName("arn:aws:lambda:us-east-2:342123803606:function:movie-info-service")
+		invokeRequest.withFunctionName("add your arn address")
 				.withPayload(payload);	
 
 		InvokeResult invokeResult = client.invoke(invokeRequest);
